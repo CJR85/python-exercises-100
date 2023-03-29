@@ -7,8 +7,10 @@ names = names_string.split(",")
 
 # Write code below
 # Get the total number of items in the list
-num_items = len(names)
+# num_items = len(names)
+# # Generate random numbers between 0 and the last index
+# random_choice = random.randint(0, num_items - 1)
+# bill_payer = names[random_choice]
 
-random_choice = random.randint(0, num_items - 1)
-bill_payer = names[random_choice]
+bill_payer = random.choice(names) # Choice function
 print(bill_payer + " is going to pay for the entire meal today.")
