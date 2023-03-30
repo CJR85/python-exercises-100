@@ -2,3 +2,9 @@
 # Important: There should only be ONE print statement in the console output
 
 # Write code below
+
+# Solution 1
+total = 0
+for number in range(2, 101, 2):
+    total += number
+print(total)
