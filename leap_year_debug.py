@@ -1,6 +1,6 @@
 # Instructions: Read the code below, spot the problem and modify the code to fix the program.
 
-year = input("Which year do you want to check? ")
+year = int(input("Which year do you want to check? ")) #Changed to integer
 
 if year % 4 == 0:
     if year % 100 == 0:
