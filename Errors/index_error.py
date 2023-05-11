@@ -4,7 +4,11 @@ fruits = ["Apple", "Pear", "Orange"]
 
 # TODO: Catch the exception & make sure the code does not crash
 def make_pie(index):
-    fruit = fruits[index]
-    print(fruit + " pie")
+    try:
+      fruit = fruits[index]
+    except IndexError:
+       print("Fruit pie")
+    else:
+      print(fruit + " pie")
 
 make_pie(4)
